@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand {
+    color: white; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+} 
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696e9; 
+}
+
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .content {
+    z-index: 888;
+    color: white;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1 {
+    font-size: 5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span {
+    /* font-size: 1.2em; */
+    font-weight: 600;
+}
+
+@media (max-width: 1040px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1,1,1,0.5);
+    }
+
+    header .navigation .navigation-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navigation .navigation-items a:before {
+        background: #222;
+        height: 5px;
+    }
+
+    header .navigation .navigation-items {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 /20%);
+    }
+
+    .menu-btn {
+        background: url('images/menu.png') no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active {
+        z-index: 999;
+        background: url('images/close.png') no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
+.footer1{
+    background-color:a3b18a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 40px;
+}
+.footer2{
+    display: flex;
+    background-color: #8A8D91;
+    height: 250px;
+    justify-content: space-evenly;
+    
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+}
+ul p{
+    color: white;
+    font-weight: 900;
+}
+ul{
+    margin-top: 20px;
+}
+.footer3{
+    background-color: #8A8D91;
+    height: 65px;
+    margin-top: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.85rem;
+}
+.foot-logo{
+    background-image: url(amazon_logo.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+.foote{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+}
+/* .foote p{
+    width: 100px;
+    margin-left: 3px;
+} */
+.footer4{
+    background-color: #646e7c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    
+}
+.footer4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    margin-right: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.main{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main1{
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.Drone{
+    height:500px;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.im{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+.all{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    padding: 15px;
+}
+.all img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px black;
+    transition: 1s;
+}
+.all img:hover{
+    box-shadow: 13px 16px 32px black;
+}
+.intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subintro{
+    width: 80%;
+}
+.subintro p{
+    text-align: justify;
+}
+.top{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+.mainicon{
+    height:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+.main1{
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+.icons{
+    width: 100px;
+    height:100px;
+    /* border: 2px solid black; */
+
+}
+.oic{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+i{
+    font-size: 50px;
+}
+.icons p{
+    width: 80%;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 10px;
+}
+.droneimg{
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+/* .subdrone{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    padding: 15px;
+} */
+.droneimg img{
+    width: 60%;
+    /* height: 500px; */
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px black;
+    transition: 1s ease-in;
+}
+img:hover{
+    box-shadow: 13px 16px 32px black;
+}
+@media(width >= 900px){
+    .droneimg img{
+        width: 819px;
+        height: 629px;
+        border-radius: 10px;
+        box-shadow: 8px 8px 16px black;
+        transition: 1s ease-in;
+    }
+}
+
